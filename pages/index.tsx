@@ -60,9 +60,16 @@ export default function Home() {
             key={prop.name}
             className="border rounded-xl overflow-hidden shadow hover:shadow-lg transition"
           >
-            <img
+            {/* <img
               src={prop.image}
               alt={prop.name}
+              className="h-56 w-full object-cover"
+            /> */}
+            <Image
+              src={prop.image}
+              alt={prop.name}
+              width={400}
+              height={224}
               className="h-56 w-full object-cover"
             />
             <div className="p-4">
